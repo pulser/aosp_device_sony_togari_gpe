@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(TARGET_PREBUILT_KERNEL):kernel
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, device/sony/rhine/device.mk)
-$(call inherit-product, vendor/sony/togari/togari-vendor.mk)
+$(call inherit-product, vendor/sony/togari_gpe/togari_gpe-vendor.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES += \
@@ -28,10 +28,10 @@ PRODUCT_COPY_FILES += \
     device/sony/togari/rootdir/logo.rle:root/logo.rle \
     device/sony/togari/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf
 
-PRODUCT_NAME := aosp_c6803
-PRODUCT_DEVICE := togari
+PRODUCT_NAME := aosp_c6806_gpe
+PRODUCT_DEVICE := togari_gpe
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia Z Ultra (AOSP)
+PRODUCT_MODEL := Xperia Z Ultra GPe(AOSP)
 PRODUCT_LOCALES += xxhdpi xhdpi hdpi
 PRODUCT_MANUFACTURER := Sony
 
